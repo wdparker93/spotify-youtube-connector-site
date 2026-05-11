@@ -387,6 +387,64 @@
     .footer-note { font-size: 12px; color: #555; margin-top: 8px; }
 
     /* ── Responsive ── */
+    /* ── Roadmap ── */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 52px;
+    }
+
+    .roadmap-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .roadmap-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      width: fit-content;
+    }
+
+    .roadmap-badge.next    { background: var(--green-dim); color: var(--green); border: 1px solid var(--green-border); }
+    .roadmap-badge.planned { background: rgba(255,255,255,0.05); color: #888; border: 1px solid #333; }
+    .roadmap-badge.later   { background: rgba(255,255,255,0.03); color: #666; border: 1px solid #2a2a2a; }
+
+    .roadmap-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+    .roadmap-card p  { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+    .roadmap-list {
+      list-style: none;
+      margin-top: 18px;
+    }
+
+    .roadmap-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 4px 0;
+    }
+
+    .roadmap-list li::before {
+      content: '→';
+      color: var(--green);
+      font-size: 11px;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
     @media (max-width: 860px) {
       .hero .container { grid-template-columns: 1fr; }
       .hero h1 { font-size: 40px; }
@@ -394,6 +452,7 @@
       .steps { grid-template-columns: 1fr; gap: 32px; }
       .shots-grid { grid-template-columns: 1fr; }
       .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+      .roadmap-grid { grid-template-columns: 1fr; }
       h2.heading { font-size: 30px; }
       .cta h2 { font-size: 30px; }
     }
@@ -595,6 +654,54 @@
              class="btn btn-green" target="_blank" rel="noopener noreferrer">
             Buy Premium
           </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Roadmap ── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-tag">What's Next</div>
+      <h2 class="heading">The road ahead</h2>
+      <p class="subtext">A few things actively in the works — roughly in the order they're coming.</p>
+      <div class="roadmap-grid">
+
+        <div class="roadmap-card">
+          <span class="roadmap-badge next">Up Next</span>
+          <h3>Vibe Modes</h3>
+          <p>Choose the mood and Visualizer finds a video that matches the feel — not just the title. Great for background listening when you want the visuals to match the energy.</p>
+          <ul class="roadmap-list">
+            <li>Lo-Fi</li>
+            <li>Chill</li>
+            <li>Night Drive</li>
+            <li>Gym</li>
+            <li>Study</li>
+            <li>Cyberpunk</li>
+          </ul>
+        </div>
+
+        <div class="roadmap-card">
+          <span class="roadmap-badge planned">In the Works</span>
+          <h3>Smart Offset Detection</h3>
+          <p>YouTube videos don't always start at second zero — intros, countdowns, and silence push the music back. Smart sync detects where the song actually begins and cues the video there automatically.</p>
+          <ul class="roadmap-list">
+            <li>Auto-detect song start position</li>
+            <li>Skip intros and pre-roll silence</li>
+            <li>Tighter sync on track changes</li>
+          </ul>
+        </div>
+
+        <div class="roadmap-card">
+          <span class="roadmap-badge later">On the Horizon</span>
+          <h3>Community Picks</h3>
+          <p>The algorithm doesn't always find the best video. Community Picks lets users surface and vote on the version everyone agrees is the right one for each song.</p>
+          <ul class="roadmap-list">
+            <li>Vote for the best video match</li>
+            <li>See what others are watching</li>
+            <li>Share synced playlists</li>
+          </ul>
         </div>
 
       </div>
