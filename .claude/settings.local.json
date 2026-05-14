@@ -6,7 +6,11 @@
       "Bash(Sort-Object FullName)",
       "Bash(Get-ChildItem -Path \"M:\\\\VsCodeRepos\\\\spotify-youtube-connector-site\\\\images\")",
       "Bash(Select-Object Name, Length, LastWriteTime)",
-      "Bash(Sort-Object LastWriteTime -Descending)"
+      "Bash(Sort-Object LastWriteTime -Descending)",
+      "Bash(python3 -c \"import json,sys; m=json.load\\(sys.stdin\\); print\\('version:', m.get\\('version'\\)\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
