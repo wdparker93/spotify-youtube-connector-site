@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"M:\\\\VsCodeRepos\\\\spotify-youtube-connector-site\" -Recurse)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Get-ChildItem -Path \"M:\\\\VsCodeRepos\\\\spotify-youtube-connector-site\\\\images\")",
+      "Bash(Select-Object Name, Length, LastWriteTime)",
+      "Bash(Sort-Object LastWriteTime -Descending)"
+    ]
+  }
+}
