@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GrooveVision — Watch What You Listen To</title>
-  <meta name="description" content="Automatically opens and syncs YouTube music videos to whatever you're listening to, via Last.fm. Works with SoundCloud, Spotify, Apple Music, and any app that scrobbles.">
+  <meta name="description" content="Automatically opens and syncs YouTube music videos to your Spotify playback. No Spotify Premium required.">
   <meta property="og:title" content="GrooveVision — Watch What You Listen To">
-  <meta property="og:description" content="Automatically opens and syncs YouTube music videos to whatever you're listening to, via Last.fm. Works with SoundCloud, Spotify, Apple Music, and any app that scrobbles.">
+  <meta property="og:description" content="Automatically opens and syncs YouTube music videos to your Spotify playback. No Spotify Premium required.">
   <meta property="og:image" content="images/promo-tile.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GrooveVision — Watch What You Listen To">
-  <meta name="twitter:description" content="Automatically opens and syncs YouTube music videos to whatever you're listening to, via Last.fm. Works with SoundCloud, Spotify, Apple Music, and any app that scrobbles.">
+  <meta name="twitter:description" content="Automatically opens and syncs YouTube music videos to your Spotify playback. No Spotify Premium required.">
   <meta name="twitter:image" content="images/promo-tile.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/16x16.png?v=2">
   <link rel="icon" type="image/png" sizes="48x48" href="icons/48x48.png?v=2">
@@ -508,10 +508,12 @@
          class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
         Add to Chrome
       </a>
+      <!-- PREMIUM_DISABLED: purchase not currently available
       <a href="https://catniplabs.lemonsqueezy.com/checkout/buy/18d53dec-7fb3-4ecf-9b73-2a4ab19691ad"
          class="btn btn-green" target="_blank" rel="noopener noreferrer">
         Buy Premium
       </a>
+      -->
     </div>
   </nav>
 
@@ -523,22 +525,24 @@
         <h1>Watch <em>what</em><br>you listen to</h1>
         <p>
           GrooveVision automatically finds the YouTube music video for whatever
-          you're listening to — opening it in the background, muted, synced.
-          Works with any app that scrobbles to Last.fm: SoundCloud, Spotify, Apple Music, and more.
+          you're playing in Spotify — opening it in the background, muted, synced
+          to the exact position. No extra steps.
         </p>
         <div class="hero-btns">
           <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
              class="btn btn-green btn-lg" target="_blank" rel="noopener noreferrer">
             Add to Chrome — Free
           </a>
+          <!-- PREMIUM_DISABLED: purchase not currently available
           <a href="https://catniplabs.lemonsqueezy.com/checkout/buy/18d53dec-7fb3-4ecf-9b73-2a4ab19691ad"
              class="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer">
             Buy Premium — $1.99/mo
           </a>
+          -->
         </div>
       </div>
       <div class="hero-media">
-        <img src="images/all.jpg?v=2" alt="GrooveVision syncing a YouTube video with Last.fm now-playing">
+        <img src="images/all.jpg?v=2" alt="GrooveVision syncing a YouTube video with Spotify playback">
       </div>
     </div>
   </header>
@@ -554,25 +558,25 @@
         <div class="card">
           <div class="card-icon">▶</div>
           <h3>Automatic Video Sync</h3>
-          <p>Start any song in your music app and the matching YouTube video opens in a background tab automatically — no manual searching required.</p>
+          <p>Start any song in Spotify and the matching YouTube video opens in a background tab — already cued to the right moment.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">🔇</div>
           <h3>Muted by Default</h3>
-          <p>The YouTube tab stays muted so your music plays uninterrupted. Switch to the tab and unmute whenever you want the video's audio instead.</p>
+          <p>The YouTube tab stays muted so Spotify's audio plays uninterrupted. Switch to the tab and unmute whenever you want the video's audio instead.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">⏭</div>
           <h3>Skip Song? It Follows</h3>
-          <p>Skip tracks in your player and the YouTube tab navigates to the new video automatically — works across any scrobbling app.</p>
+          <p>Skip tracks in Spotify and the YouTube tab navigates to the new video automatically — no manual searching required.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">🎵</div>
-          <h3>Works with Any Music App</h3>
-          <p>If your app scrobbles to Last.fm, GrooveVision picks it up. SoundCloud, Spotify, Apple Music, Tidal, and dozens more — on any device.</p>
+          <h3>No Spotify Premium Needed</h3>
+          <p>Works with any Spotify account. The extension reads what's playing — it never takes control of Spotify.</p>
         </div>
 
         <div class="card">
@@ -662,7 +666,7 @@
         <div class="step">
           <div class="step-num">1</div>
           <h3>Install the Extension</h3>
-          <p>Add GrooveVision to Chrome from the Web Store, then enter your Last.fm username when prompted. Free Last.fm account required.</p>
+          <p>Add GrooveVision to Chrome from the Web Store, then connect your Spotify account when prompted. No Premium subscription required.</p>
         </div>
 
         <div class="step">
@@ -674,7 +678,7 @@
         <div class="step">
           <div class="step-num">3</div>
           <h3>Turn On Sync &amp; Play</h3>
-          <p>Flip the sync toggle in the popup, start a song in your music app, and watch the YouTube video appear automatically.</p>
+          <p>Flip the sync toggle in the popup, start a song in Spotify, and watch the YouTube video appear automatically — perfectly timed.</p>
         </div>
 
       </div>
@@ -693,8 +697,8 @@
           <div class="shot-caption">Now-playing view with one-tap sync toggle</div>
         </div>
         <div class="shot">
-          <img src="images/signin.jpg" alt="Last.fm username connection screen">
-          <div class="shot-caption">Simple Last.fm username connection</div>
+          <img src="images/signin.jpg" alt="Spotify sign-in authentication screen">
+          <div class="shot-caption">Simple Spotify account connection</div>
         </div>
       </div>
     </div>
@@ -714,8 +718,8 @@
           <div class="price-note">forever</div>
           <ul class="price-list">
             <li>Auto-open YouTube music videos</li>
-            <li>Play/pause sync with your music app</li>
-            <li>Works with any Last.fm-connected app</li>
+            <li>Play/pause sync with Spotify</li>
+            <li>Seek to correct position on skip</li>
           </ul>
           <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
              class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
@@ -733,10 +737,15 @@
             <li>Pin custom videos to any song</li>
             <li>All future Premium features</li>
           </ul>
+          <!-- PREMIUM_DISABLED: purchase not currently available
           <a href="https://catniplabs.lemonsqueezy.com/checkout/buy/18d53dec-7fb3-4ecf-9b73-2a4ab19691ad"
              class="btn btn-green" target="_blank" rel="noopener noreferrer">
             Buy Premium
           </a>
+          -->
+          <span class="btn btn-ghost" style="cursor: default; opacity: 0.45; pointer-events: none;">
+            Not Currently Available
+          </span>
         </div>
 
       </div>
@@ -747,16 +756,18 @@
   <section class="section cta">
     <div class="container">
       <h2>Start listening with visuals</h2>
-      <p>Free to install. Works with any app that scrobbles to Last.fm. Ready in minutes.</p>
+      <p>Free to install. Works with any Spotify account. Ready in minutes.</p>
       <div class="cta-btns">
         <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
            class="btn btn-green btn-lg" target="_blank" rel="noopener noreferrer">
           Add to Chrome — Free
         </a>
+        <!-- PREMIUM_DISABLED: purchase not currently available
         <a href="https://catniplabs.lemonsqueezy.com/checkout/buy/18d53dec-7fb3-4ecf-9b73-2a4ab19691ad"
            class="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer">
           Buy Premium — $1.99/mo
         </a>
+        -->
       </div>
     </div>
   </section>
@@ -766,12 +777,14 @@
     <div class="footer-links">
       <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
          target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
+      <!-- PREMIUM_DISABLED: purchase not currently available
       <a href="https://catniplabs.lemonsqueezy.com/checkout/buy/18d53dec-7fb3-4ecf-9b73-2a4ab19691ad"
          target="_blank" rel="noopener noreferrer">Buy Premium</a>
+      -->
       <a id="support-link" href="#">Support & Feedback</a>
     </div>
     <p>&copy; 2026 GrooveVision. All rights reserved.</p>
-    <p class="footer-note">Not affiliated with Last.fm, YouTube, or any music streaming service.</p>
+    <p class="footer-note">Not affiliated with Spotify AB or YouTube.</p>
   </footer>
 
   <script>
