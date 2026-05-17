@@ -267,7 +267,7 @@
 
     .steps {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 40px;
       margin-top: 52px;
     }
@@ -473,7 +473,7 @@
       .hero .container { grid-template-columns: 1fr; }
       .hero h1 { font-size: 40px; }
       .features-grid { grid-template-columns: 1fr 1fr; }
-      .steps { grid-template-columns: 1fr; gap: 32px; }
+      .steps { grid-template-columns: 1fr; }
       .shots-grid { grid-template-columns: 1fr; }
       .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
       .roadmap-grid { grid-template-columns: 1fr; }
@@ -525,8 +525,8 @@
         <h1>Watch <em>what</em><br>you listen to</h1>
         <p>
           GrooveVision automatically finds the YouTube music video for whatever
-          you're playing in Spotify — opening it in the background, muted, synced
-          to the exact position. No extra steps.
+          you're playing in the Spotify desktop app — opening it in the background,
+          muted, and synced to the exact position.
         </p>
         <div class="hero-btns">
           <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
@@ -576,7 +576,7 @@
         <div class="card">
           <div class="card-icon">🎵</div>
           <h3>No Spotify Premium Needed</h3>
-          <p>Works with any Spotify account. The extension reads what's playing — it never takes control of Spotify.</p>
+          <p>Works with any Spotify account and the free desktop app. The companion reads what's playing — it never takes control of Spotify.</p>
         </div>
 
         <div class="card">
@@ -660,25 +660,31 @@
     <div class="container">
       <div class="section-tag">How It Works</div>
       <h2 class="heading">Up and running in minutes</h2>
-      <p class="subtext">Three steps from install to your first synced video.</p>
+      <p class="subtext">Four quick steps from install to your first synced video.</p>
       <div class="steps">
 
         <div class="step">
           <div class="step-num">1</div>
           <h3>Install the Extension</h3>
-          <p>Add GrooveVision to Chrome from the Web Store, then connect your Spotify account when prompted. No Premium subscription required.</p>
+          <p>Add GrooveVision to Chrome from the Web Store. No Spotify Premium required.</p>
         </div>
 
         <div class="step">
           <div class="step-num">2</div>
+          <h3>Run the Companion App</h3>
+          <p>Download the installer from GitHub, extract the zip, and double-click <strong>install.bat</strong>. It registers itself with Chrome — nothing runs in your taskbar.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-num">3</div>
           <h3>Add a YouTube API Key</h3>
           <p>Create a free API key at Google Cloud Console in about two minutes. Paste it into the extension settings — one time, and you're done.</p>
         </div>
 
         <div class="step">
-          <div class="step-num">3</div>
+          <div class="step-num">4</div>
           <h3>Turn On Sync &amp; Play</h3>
-          <p>Flip the sync toggle in the popup, start a song in Spotify, and watch the YouTube video appear automatically — perfectly timed.</p>
+          <p>Flip the sync toggle in the popup, start a song in Spotify desktop, and watch the YouTube video appear automatically — perfectly timed.</p>
         </div>
 
       </div>
@@ -756,7 +762,7 @@
   <section class="section cta">
     <div class="container">
       <h2>Start listening with visuals</h2>
-      <p>Free to install. Works with any Spotify account. Ready in minutes.</p>
+      <p>Free to install. Works with any Spotify account and the free desktop app.</p>
       <div class="cta-btns">
         <a href="https://chromewebstore.google.com/detail/spotify-youtube-connector/iejohepdknhbhblomgeolfgmohbpfehf"
            class="btn btn-green btn-lg" target="_blank" rel="noopener noreferrer">
